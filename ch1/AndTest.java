@@ -5,21 +5,21 @@ import java.util.Scanner;
 public class AndTest {
 
 	public static void main(String[] args) {
-		// and¿¬½À
+		// andì—°ìŠµ
 		
 		
 		Scanner input = new Scanner(System.in);
-		System.out.println("Á¤¼ö¸¦ ³ÖÀ¸¸é À¯´ÏÄÚµå º¯È¯ ÇØµå¸³´Ï´Ù.");
-		System.out.print("ÀÔ·Â : ");
+		System.out.println("ì •ìˆ˜ë¥¼ ë„£ìœ¼ë©´ ìœ ë‹ˆì½”ë“œ ë³€í™˜ í•´ë“œë¦½ë‹ˆë‹¤.");
+		System.out.print("ìž…ë ¥ : ");
 		
 		int code = input.nextInt();
 		
 		if ((code > 65) & (code < 90 )) {
-			System.out.println("º¯È¯µÈ À¯´ÏÄÚµå °ª : " + (char)code);
+			System.out.println("ë³€í™˜ëœ ìœ ë‹ˆì½”ë“œ ê°’ : " + (char)code);
 		}else if ((code>97)&(code<122)) {
-			System.out.println("º¯È¯µÈ À¯´ÏÄÚµå °ª : " + (char)code);
+			System.out.println("ë³€í™˜ëœ ìœ ë‹ˆì½”ë“œ ê°’ : " + (char)code);
 		} else {
-			System.out.println("À¯´ÏÄÚµå º¯È¯ ºÒ°¡´ÉÇÕ´Ï´Ù.");
+			System.out.println("ìœ ë‹ˆì½”ë“œ ë³€í™˜ ë¶ˆê°€ëŠ¥í•©ë‹ˆë‹¤.");
 		}
 		
 		

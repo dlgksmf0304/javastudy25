@@ -4,60 +4,60 @@ public class VarExam {
 
 	public static void main(String[] args) {
 		
-		int x = 1 ;//int´Â Á¤¼öÅ¸ÀÔº¯¼öÀÌ´Ù.
+		int x = 1 ;//intëŠ” ì •ìˆ˜íƒ€ì…ë³€ìˆ˜ì´ë‹¤.
 		
-		char y = 65 ;//char´Â ¹®ÀÚÅ¸ÀÔº¯¼öÁö¸¸ ¼ıÀÚ·Î º¯È¯µÇ±âµµÇÑ´Ù.
-					 //À¯´ÏÄÚµåÇ¥ º¼°Í.(65´Â A¸¦ ÀÇ¹ÌÇÔ)
+		char y = 65 ;//charëŠ” ë¬¸ìíƒ€ì…ë³€ìˆ˜ì§€ë§Œ ìˆ«ìë¡œ ë³€í™˜ë˜ê¸°ë„í•œë‹¤.
+		             //ìœ ë‹ˆì½”ë“œí‘œ ë³¼ê²ƒ.(65ëŠ” Aë¥¼ ì˜ë¯¸í•¨)
 		
-		char z = 'A' ;//º¯¼ö z¸¦ ¹®ÀÚ A·Î ³Ö¾úÀ¸´Ï Ãâ·ÂÀÌ A·Î µÇ¾ßÇÔ
+		char z = 'A' ;//ë³€ìˆ˜ zë¥¼ ë¬¸ì Aë¡œ ë„£ì—ˆìœ¼ë‹ˆ ì¶œë ¥ì´ Aë¡œ ë˜ì•¼í•¨
 		
 		System.out.println("int x = " + x);
 		System.out.println("char y = " + y);
 		System.out.println("char z = " + z);
 		
 		
-		//º¯¼ö¼±¾ğ
+		//ë³€ìˆ˜ì„ ì–¸
 		
-		int x1 ;//ÃÊ±âÈ­ ¾ÈµÈ º¯¼öÀÓ
-		x1 = 10 ;//º¯¼ö¿¡ ÃÊ±â°ªÀÌ ¾ø±â ¶§¹®¿¡ 10À» ³Ö¾îÁÜ
+		int x1 ;//ì´ˆê¸°í™” ì•ˆëœ ë³€ìˆ˜ì„
+		x1 = 10 ;//ë³€ìˆ˜ì— ì´ˆê¸°ê°’ì´ ì—†ê¸° ë•Œë¬¸ì— 10ì„ ë„£ì–´ì¤Œ
 		System.out.println("x1 = " + x1);
-		//ÄÜ¼Ö¿¡ º¯¼ö°ª¸¸ Ãâ·ÂÇÏ°í½ÍÀ¸¸é °ıÈ£()¾È¿¡ x1¸¸ ¾²¸é º¯¼ö°ª 10¸¸ Ãâ·Â‰Î
+		//ì½˜ì†”ì— ë³€ìˆ˜ê°’ë§Œ ì¶œë ¥í•˜ê³ ì‹¶ìœ¼ë©´ ê´„í˜¸()ì•ˆì— x1ë§Œ ì“°ë©´ ë³€ìˆ˜ê°’ 10ë§Œ ì¶œë ¥Â‰
 		
-		//´ÙÁß º¯¼ö ¼±¾ğ
+		//ë‹¤ì¤‘ ë³€ìˆ˜ ì„ ì–¸
 		
-		int kor, mat, eng, total, avg ;//±¹¾î,¼öÇĞ, ¿µ¾î, ÃÑÇÕ, Æò±Õ
+		int kor, mat, eng, total, avg ;//êµ­ì–´,ìˆ˜í•™, ì˜ì–´, ì´í•©, í‰ê· 
 		
 		kor = 80 ;
 		mat = 70 ;
-		eng = 60 ;//À§¿¡ º¯¼ö°ªÀ» ÁöÁ¤¾ÈÇØÁà¼­ µû·Î ÁöÁ¤ÇØÁÜ
+		eng = 60 ;//ìœ„ì— ë³€ìˆ˜ê°’ì„ ì§€ì •ì•ˆí•´ì¤˜ì„œ ë”°ë¡œ ì§€ì •í•´ì¤Œ
 		total = kor + mat + eng ;
-		avg = total / 3 ;//Æò±ÕÀº ÃÑÇÕÁ¡¼ö ³ª´©±â 3
+		avg = total / 3 ;//í‰ê· ì€ ì´í•©ì ìˆ˜ ë‚˜ëˆ„ê¸° 3
 		
-		System.out.println("ÃÑÇÕ : " + total);
-		System.out.println("Æò±Õ : " + avg);
-		
-		
-		char firstname = '±è' ;
-		char firstName = 'ÀÌ';
-		
-		System.out.println("¼º : " + firstname);
-		System.out.println("¼º : " + firstName);
-		// º¯¼ö¸í¿¡ ´ë¼Ò¹®ÀÚ´Â ´Ù¸¥ º¯¼ö·Î ÀÎ½ÄÇÑ´Ù.
-		// ±×·¸±â¶§¹®¿¡ º¯¼ö¿¡ ´ë¼Ò¹®ÀÚ¸¦ Àß ±¸º°ÇØ¾ßÇÑ´Ù.
+		System.out.println("ì´í•© : " + total);
+		System.out.println("í‰ê·  : " + avg);
 		
 		
-		// ¸®ÅÍ·² : Á÷Á¢ ÀÔ·ÂµÈ °ª!
+		char firstname = 'ê¹€' ;
+		char firstName = 'ì´';
 		
-		int literal1 = 75 ; // 10Áø¼ö
-		int literal2 = 075 ; // 8Áø¼ö
-		int literal3 = 0b0011 ; // 2Áø¼ö
-		int literal4 = 0xA ; // 16Áø¼ö
+		System.out.println("ì„± : " + firstname);
+		System.out.println("ì„± : " + firstName);
+		// ë³€ìˆ˜ëª…ì— ëŒ€ì†Œë¬¸ìëŠ” ë‹¤ë¥¸ ë³€ìˆ˜ë¡œ ì¸ì‹í•œë‹¤.
+		// ê·¸ë ‡ê¸°ë•Œë¬¸ì— ë³€ìˆ˜ì— ëŒ€ì†Œë¬¸ìë¥¼ ì˜ êµ¬ë³„í•´ì•¼í•œë‹¤.
+		
+		
+		// ë¦¬í„°ëŸ´ : ì§ì ‘ ì…ë ¥ëœ ê°’!
+		
+		int literal1 = 75 ; // 10ì§„ìˆ˜
+		int literal2 = 075 ; // 8ì§„ìˆ˜
+		int literal3 = 0b0011 ; // 2ì§„ìˆ˜
+		int literal4 = 0xA ; // 16ì§„ìˆ˜
 				
-		System.out.println("10Áø¼ö 75 : " + literal1);
-		System.out.println("8Áø¼ö 75 : " + literal2);
-		System.out.println("2Áø¼ö 0011 : " + literal3);
-		System.out.println("16Áø¼ö A : " + literal4);
-		//°ªÀ» ¸ğ¸£°ÚÀ»¶§¿£ ÄÄÇ»ÅÍ °è»ê±â ÇÁ·Î±×·¡¸Ó·Î ¹Ù²ã¼­ È®ÀÎÇÒ°Í
+		System.out.println("10ì§„ìˆ˜ 75 : " + literal1);
+		System.out.println("8ì§„ìˆ˜ 75 : " + literal2);
+		System.out.println("2ì§„ìˆ˜ 0011 : " + literal3);
+		System.out.println("16ì§„ìˆ˜ A : " + literal4);
+		//ê°’ì„ ëª¨ë¥´ê² ì„ë•Œì—” ì»´í“¨í„° ê³„ì‚°ê¸° í”„ë¡œê·¸ë˜ë¨¸ë¡œ ë°”ê¿”ì„œ í™•ì¸í• ê²ƒ
 				
 		
 

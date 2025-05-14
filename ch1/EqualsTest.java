@@ -3,13 +3,13 @@ package ch1;
 public class EqualsTest {
 
 	public static void main(String[] args) {
-		// equals»ç¿ëÇØº¸±â
-		// »õ·Î¿î °´Ã¼ »ı¼º
+		// equalsì‚¬ìš©í•´ë³´ê¸°
+		// ìƒˆë¡œìš´ ê°ì²´ ìƒì„±
 		
 
-		String a = "ÇÏ´Ã" ;
-		String b = "ÇÏ´Ã" ;
-		String c = new String ("ÇÏ´Ã") ;
+		String a = "í•˜ëŠ˜" ;
+		String b = "í•˜ëŠ˜" ;
+		String c = new String ("í•˜ëŠ˜") ;
 		
 		System.out.println(a == b);
 		System.out.println(a == c);

@@ -7,14 +7,14 @@ public class PromotionExam {
 		
 		byte byteValue = 10;
 		int intValue = byteValue ;
-		System.out.println("ÀÚµ¿Å¸ÀÔ º¯È¯µÈ int : " + intValue);
+		System.out.println("ìë™íƒ€ì… ë³€í™˜ëœ int : " + intValue);
 		
-		char charValue = '°¡';
-		//char´Â ¹®ÀÚÅ¸ÀÔÀÌ±â ¶§¹®¿¡ '°¡'¸¦ ³Ö¾î¼­ º¯È¯ÇÑ´Ù
+		char charValue = 'ê°€';
+		//charëŠ” ë¬¸ìíƒ€ì…ì´ê¸° ë•Œë¬¸ì— 'ê°€'ë¥¼ ë„£ì–´ì„œ ë³€í™˜í•œë‹¤
 		intValue = charValue ;
-		//À§¿¡ int intValue´Â byteValueº¯¼ö ÁöÁ¤ÇØÁá±â ¶§¹®¿¡
-		//¿©±â¼± intÁöÁ¤ ÇÏÁö ¾Ê¾Æµµ µÈ´Ù.
-		System.out.println("ÀÚµ¿Å¸ÀÔ º¯È¯µÈ int : " + intValue);
+		//ìœ„ì— int intValueëŠ” byteValueë³€ìˆ˜ ì§€ì •í•´ì¤¬ê¸° ë•Œë¬¸ì—
+		//ì—¬ê¸°ì„  intì§€ì • í•˜ì§€ ì•Šì•„ë„ ëœë‹¤.
+		System.out.println("ìë™íƒ€ì… ë³€í™˜ëœ int : " + intValue);
 		
 		
 		

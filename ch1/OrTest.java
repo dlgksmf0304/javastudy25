@@ -5,19 +5,19 @@ import java.util.Scanner;
 public class OrTest {
 
 	public static void main(String[] args) {
-		// or¿¬½À
+		// orì—°ìŠµ
 		
 		
 		Scanner input = new Scanner(System.in);
-		System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		int a = input.nextInt();
 		if ((a%3 ==0 ) || (a %5==0)) {
-			System.out.println("3¶Ç´Â 5ÀÇ ¹è¼öÀÔ´Ï´Ù. " + a);
+			System.out.println("3ë˜ëŠ” 5ì˜ ë°°ìˆ˜ì…ë‹ˆë‹¤. " + a);
 			
 		}else {
-			System.out.println("3¶Ç´Â 5ÀÇ ¹è¼ö°¡ ¾Æ´Õ´Ï´Ù.");
-		}//a¶ó´Â ¼ö¸¦ 3À¸·Î ³ª´³À»¶§ ³ª¸ÓÁö°¡ 0ÀÌ¶û ¶È°°À¸¸é 3ÀÇ ¹è¼ö
-		//a¸¦ 5·Î ³ª´³À»¶§ ³ª¸ÓÁö°¡ 0ÀÌ¶û ¶È°°À¸¸é 5ÀÇ ¹è¼ö
+			System.out.println("3ë˜ëŠ” 5ì˜ ë°°ìˆ˜ê°€ ì•„ë‹™ë‹ˆë‹¤.");
+		}//aë¼ëŠ” ìˆ˜ë¥¼ 3ìœ¼ë¡œ ë‚˜ëˆ´ì„ë•Œ ë‚˜ë¨¸ì§€ê°€ 0ì´ë‘ ë˜‘ê°™ìœ¼ë©´ 3ì˜ ë°°ìˆ˜
+		//aë¥¼ 5ë¡œ ë‚˜ëˆ´ì„ë•Œ ë‚˜ë¨¸ì§€ê°€ 0ì´ë‘ ë˜‘ê°™ìœ¼ë©´ 5ì˜ ë°°ìˆ˜
 		
 		
 		
