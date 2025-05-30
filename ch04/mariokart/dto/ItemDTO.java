@@ -19,7 +19,7 @@ public class ItemDTO {
 			
 		case "2" :
 			System.out.println("마리오카트 게임시작을 취소합니다.");
-			return loginState;
+			break;
 			
 		default :
 			System.out.println("START와 EXIT 둘 중 하나만 선택해주세요.");
