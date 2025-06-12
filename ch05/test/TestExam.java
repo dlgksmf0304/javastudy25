@@ -2,51 +2,68 @@ package ch05.test;
 
 import java.util.Scanner;
 
-public class TestExam {
-	
+import ch05.test.DTO.ScoreDTO;
+import ch05.test.service.StudentService;
+import ch05.test.service.TeacherService;
+
+public class TestExam {//성적프로그램 만들기 main메서드
 	
 	public static Scanner inputInt = new Scanner(System.in);
 	public static Scanner inputStr = new Scanner(System.in);
 	
+	public static ScoreDTO[] scores = new ScoreDTO[5];  
 	
-	public static AccountDTO[] service = new AccountDTO[10];
-	public static int count = 0;
 	
+	
+	//생성자 ==============================================================
+	
+
 	static {
-		AccountDTO accountDTO = new AccountDTO();
-		service[0] = accountDTO;
+		ScoreDTO scoreDTO = new ScoreDTO();
+		scores[0] = scoreDTO;
 		
 	}
 	
 	
-	
+// 메서드 ===============================================================
 	public static void main(String[] args) {
-		// 성적처리 프로그램 main메서드
-
-		boolean run = true;
+	
+		boolean run = true ;
 		
 		while(run) {
+			System.out.println("======성적프로그램======");
+			System.out.println("1. 교사전용");
+			System.out.println("2. 학생전용");
+			System.out.print("메뉴를 선택해주세요 : ");
+			int select = inputInt.nextInt();
 			
+			switch(select) {
+			case 1 :
+				System.out.println("교사전용 화면으로 넘어갑니다.");
+				TeacherService teacherService = new TeacherService();
+				teacherService.menu(inputInt, inputStr, scores);
+				break;
+				
+			case 2 :
+				System.out.println("학생전용 화면으로 넘어갑니다.");
+				StudentService studenService = new StudentService();
+				studenService.menu(inputInt, inputStr, scores);
+				break;
+				
+			case 9 :
+				System.out.println("프로그램을 종료합니다.");
+				run = false;
+				break;
+				
+			default :
+				System.out.println("1~2번만 선택해주세요.");
+				
+			}//switch 종료
+		}//while 종료
 		
-		System.out.println("성적관리프로그램입니다.");
-		System.out.println("1. 메인메뉴");
-		System.out.println("2. 프로그램 종료");
-		System.out.print(">>");
-		int num = inputInt.nextInt();
-		switch(num) {
-		case 1 :
-			System.out.println("메인메뉴로 진입합니다.");
-			Service menu = new Service();
-			menu.menu(inputStr, inputInt, service);
-			break;
-		case 2 :
-			System.out.println("프로그램을 종료합니다.");
-			run = false;
-			break;
-		}
-		
-		}
 		
 	}//main메서드 종료
 
-}// 클래스 종료
+
+
+}//클래스 종료
